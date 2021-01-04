@@ -1,0 +1,7 @@
+Flask
+Flask-Login
+Flask-Session
+passlib
+wtforms
+flask_wtf
+flask_sqlalchemy

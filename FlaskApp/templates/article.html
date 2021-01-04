@@ -1,0 +1,13 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+  <h1>{{article.title}}</h1>
+  <small>Written by {{article.author}} on {{article.create_date}}</small>
+  <hr>
+  {% if article.image_path %}
+            <img src="{{ imageSource + article.image_path }}"/>
+  {% endif %}
+  <div>
+    {{article.body | safe}}
+  </div>
+{% endblock %}
